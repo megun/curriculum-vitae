@@ -72,12 +72,38 @@
 
 ## 職務経歴（フリーランス）
 
+### AIサービスのインフラ環境構築、保守 (2021/10 - 2021/10)
+<details open>
+<summary>詳細</summary>
+
+<div>
+
+- プロジェクト概要
+  - AI×SaaSプロダクトのインフラ業務
+  - インフラチームは9人
+  - EKS上でサービス稼働
+- 業務内容
+  - 新規環境構築
+    - 脆弱性診断用の環境構築
+  - 物理マシンへの既存アプリケーション移行のフォロー
+    - メイン作業は別の人(アプリケーションチームの人)
+    - インフラ関連(k8s/istioとか)をフォローする感じ
+- 利用ツール、サービスなど
+  - Terraform,eksctl,aws-cli
+  - EKS,EC2,RDS(AuroraAurora),S3,SQS
+  - kubectl,kustomize,helm,istio
+  - ArgoCD,ArgoWorkflow,ArgoEvent
+
+</div>
+</details>
+
+
 ### 育休期間 (2021/04- 2021/09)
 
 育休
 
 ### ブロックチェーン関連サービスのインフラ環境構築、保守 (2020/04 - 2021/03)
-<details open>
+<details close>
 <summary>詳細</summary>
 
 <div>
