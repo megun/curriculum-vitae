@@ -8,7 +8,7 @@
 |住所|都内在住|
 |学歴|専門学校　情報処理科　卒業|
 |資格|2001/11 日商簿記2級<br>2011/12 旧情報セキュリティスペシャリスト試験<br>2013/01 OracleBronze<br>2015/09 LPIC-Lv.3(core)<br>2017/05 RubySliverVer2.1|
-|趣味|ギター<br>近所の猫スポット探し|
+|趣味|ギター<br>~~近所の猫スポット探し~~<br>子供と遊ぶ|
 
 ## 概要
 - 専門学校卒業後、SI企業に就職し正社員として業務に携わる
@@ -29,7 +29,7 @@
   - CloudFormation
     - メインでがっつりやった経験はないけど、書いたことはある。
   - Ansible
-    - ブランクあるけど、普通に書けるはず。 [サンプル](https://github.com/megun/ansible-samples)
+    - 大分ブランクあるけど、普通に書けるはず。 [サンプル](https://github.com/megun/ansible-samples)
 - AWS関連の構築、運用
   - 一通りのサービスは構築、運用した経験ある
 - コンテナ系
@@ -46,12 +46,10 @@
     - Dockerイメージのビルド、イメージプッシュ、デプロイなどで利用経験ある
   - CircleCI
     - Dockerイメージのビルド、イメージプッシュ、デプロイなどで利用経験ある
-  - Spinnaker
-    - 構築してeksへのデプロイ、バージョンアップなど一通りの経験はある
   - ArgoCD
     - 設計、構築、eksへのデプロイまで一通りの経験はある
 - その他
-  - インフラ系全般で幅広く経験してきてる
+  - インフラ系全般で幅広く経験してきてる（大分昔の話になってしまうが。。）
     - オンプレサーバのラッキングからOS、ミドルウェア設定とか
     - 仮想環境の管理
     - 各ミドルウェアの管理
@@ -72,8 +70,52 @@
 
 ## 職務経歴（フリーランス）
 
-### AIサービスのインフラ環境構築、保守 (2021/10 - 2021/10)
+### ブロックチェーン関連サービスのインフラ環境構築、保守 (2021/11 - 2022/07)
+
 <details open>
+<summary>詳細</summary>
+
+<div>
+
+- プロジェクト概要
+  - 決済プラットフォームサービスのインフラ構築保守全般を担当
+  - インフラ専任は一人
+  - EKS上で各種マイクロサービス起動、Istioでサービスメッシュ構成
+  - 環境数は4面（開発用、本番用、検証用、顧客検証用など）
+- 業務内容
+  - 各種アップデート作業
+    - Terraform0.12から1.2系へのアップデート
+    - Istio1.7から1.13へのアップデート
+    - EKS1.18から1.21へのアップデート
+    - ArgoCD1.6から2.3へのアップデート
+    - KubernetesExternalSecretsからExternalSecretsOperatorへの移行
+  - deployの仕組み改善
+    - shellスクリプト使いこんんでたのをシンプルな仕組みに変更
+    - secret管理方法改善
+      - ParmaterStore
+      - GitHubActionsのOIDC
+  - datadog監視内容見直し
+    - 監視項目追加(OOMイベントなど)
+    - 通知周りの見直し
+      - priorityによって通知先変更
+  - manifestのリファクタリング
+    - kube-scoreの指摘内容の修正
+    - helmとkustomize併用
+- 利用ツール、サービスなど
+  - Terraform,eksctl,aws-cli
+  - EKS,EC2,RDS(AuroraPostgreSQL),Elasticache(Redis),Lambda,CloudFront,S3,SystemManager,KMS,Kinesis
+  - kubectl,kustomize,kubeconform,kube-score,external-dns,kubernetes-external-secrets,external-secrets-operator,metrics-server,istio
+  - ArgoCD,GithubActions
+  - Datadog,DatadgoLogs
+  - Bash,Go
+  - Metabase
+  - Stunnel
+
+</div>
+</details>
+
+### AIサービスのインフラ環境構築、保守 (2021/10 - 2021/10)
+<details close>
 <summary>詳細</summary>
 
 <div>
