@@ -76,9 +76,33 @@
 
 ## 職務経歴（フリーランス）
 
-### 証券システムのインフラ管理 (2024/04 - 2025/05)
+### 不動産システムのインフラ保守 (2025/06 - 2026/03)
 
 <details open>
+<summary>詳細</summary>
+
+<div>
+
+- プロジェクト概要
+  - 不動産システムのインフラ保守管理
+  - SREチーム所属
+  - ECSでwebアプリケーション構成
+- 業務内容
+  - 各種ツール,ミドルウェア類のアップデート作業
+  - システム改善
+    - DBユーザ作成方法刷新
+    - AWSHealthチケット自動生成
+  - 新規構築の構築
+    - Rails,ECS,RDS,CloudFront,S3
+- 利用ツール、サービスなど
+  - ECS,Terraform,GitHub,Ansible,Datadog
+
+</div>
+</details>
+
+### 証券システムのインフラ管理 (2024/04 - 2025/05)
+
+<details close>
 <summary>詳細</summary>
 
 <div>
